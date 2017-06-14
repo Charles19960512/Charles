@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <include layout="@layout/mtoolbar"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorgray"
+        android:text="@string/contacts_info"
+        android:layout_height="35dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerview"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorgray"
+        android:text="@string/notice_info"
+        android:layout_height="35dp"
+        android:textSize="16dp"
+        android:gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/exc_info"
+        android:textColor="@color/colorblack"
+        android:textSize="16dp"
+        android:gravity="clip_vertical"
+        style="?android:attr/buttonBarButtonStyle"
+        android:drawableLeft="@mipmap/logistics"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BFBFBF" />
+
+    <Button
+        android:id="@+id/button17"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableLeft="@mipmap/notice"
+        android:gravity="clip_vertical"
+        android:text="@string/notice_info2"
+        android:textColor="@color/colorblack"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BFBFBF" />
+
+
+
+</LinearLayout>

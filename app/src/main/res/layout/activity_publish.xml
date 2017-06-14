@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="@string/publish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+
+        android:id="@+id/textView8"
+        android:background="@color/colorpink"
+        android:gravity="center"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/pub_edittext_style"
+        android:inputType="textPersonName"
+        android:hint="@string/input"
+        android:textSize="15dp"
+        android:textColorHint="@color/colorgray"
+        android:ems="10"
+        android:id="@+id/publish_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/colorgray"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/pub_edittext_style"
+            android:lines="4"
+            android:hint="@string/description"
+            android:textSize="16dp"
+            android:textColorHint="@color/colorgray"
+            android:ems="10"
+            android:id="@+id/publish_info"
+            android:layout_weight="0.19"
+            android:gravity="left|top"
+            android:layout_marginTop="5dp"
+            android:paddingTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/publish_image1"
+            android:layout_width="60dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/publish1"
+                android:id="@+id/addimage"
+                android:background="#FFFFFF"
+                />
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/publish2"
+                android:id="@+id/addvideo"
+                android:background="#FFFFFF"
+                />
+            <VideoView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:id="@+id/showvideo"
+                android:background="#FFFFFF"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="位置："
+        android:gravity="right|center"/>
+    <EditText
+        android:id="@+id/publish_location"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:background="@drawable/pub_edittext_style"
+         />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:gravity="right"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pub_edittext_style"
+            android:ems="8"
+            android:id="@+id/publish_price"
+            android:inputType="number" />
+
+        <TextView
+            android:text="@string/yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:text="@string/cellway"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:gravity="right"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+    </LinearLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/colorpink"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/pubtostreet" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pub_edittext_style"
+            android:ems="20"
+            android:id="@+id/publish_streetName"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/colorpink"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/pubtodiff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/pub_edittext_style"
+            android:ems="20"
+            android:id="@+id/editText8"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/colorpink"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp">
+    </View>
+
+    <Button
+        android:text="@string/surepublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:id="@+id/publish"
+        android:textSize="20dp"
+        android:background="@color/colorpink"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

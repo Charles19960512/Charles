@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_goods_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorhui"
+    tools:context="com.startsmake.StreetDemo.activity.GoodsInfo">
+<LinearLayout
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2.5"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:src="@drawable/goodinfo2" />
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="用户名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp"
+            android:id="@+id/textView11" />
+
+        <TextView
+            android:text="上次登录时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp"
+            android:id="@+id/textView13" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/g_userInfo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView13"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/g_userName"
+            android:layout_width="60dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="·成单数量:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="·评价水平:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="·信用评级:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="·发布地区:"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="75dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:id="@+id/g_location" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:text="图文详细介绍"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:id="@+id/g_info" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="租金："
+            android:textSize="20sp"
+            android:textColor="#f4e006"
+            android:gravity="bottom|center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="#f4e006"
+            android:text="￥XXX/天"
+            android:textSize="20sp"
+            android:gravity="bottom|center"
+            android:id="@+id/g_price" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/g_image1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="5.25"
+        android:background="#FFF"
+        android:src="@drawable/goodinfo1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:id="@+id/gimsg"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@drawable/goodinfo3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:gravity="center_horizontal"
+                android:text="留言" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/gimsg"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@drawable/goodinfo4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:gravity="center_horizontal"
+                android:text="点赞" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rent"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#ed3c86"
+            android:src="@mipmap/ic_launcher"
+            android:text="我想租" />
+    </RelativeLayout>
+</LinearLayout>

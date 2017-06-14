@@ -1,0 +1,6 @@
+<com.startsmake.StreetDemo.MyGridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="2"
+    android:id="@+id/gdv_street1"/>
